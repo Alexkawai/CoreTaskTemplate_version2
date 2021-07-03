@@ -92,6 +92,8 @@ public class Util {
                 settings.put("hibernate.show_sql", "true");
                 settings.put("hibernate.format_sql", "true");
                 settings.put("hibernate.hbm2ddl.auto", "update");
+                settings.put("hibernate.bytecode.use_reflection_optimizer", "false");
+
 
                 registryBuilder.applySettings(settings);
                 registry = registryBuilder.build();
